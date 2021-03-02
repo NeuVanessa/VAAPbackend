@@ -1,0 +1,6 @@
+Adicionado o package.json responsável por todas as dependencias que irá ser utilizado no backend
+
+depois que instalei a dependencia eu adicionei o express 
+
+
+criei uma pasta src e dentro dela um arquivo js com o nome de serve.js 
