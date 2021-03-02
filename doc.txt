@@ -38,3 +38,5 @@ o servidor é o nodemon
   TESTE DAS REQUISICOES, FEITO COM Insomnia 
 
   criação do servidor realizada através do mongo atlas
+
+  Instalaçando a dependencia mongoose
