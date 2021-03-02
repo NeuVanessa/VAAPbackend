@@ -4,3 +4,12 @@ depois que instalei a dependencia eu adicionei o express
 
 
 criei uma pasta src e dentro dela um arquivo js com o nome de serve.js 
+
+
+Depois de configurar no terminal executei o comando node src/server.js 
+assim o start do servidor foi realizado 
+
+Quando é realizado uma alteração o node não reconhece automaticamente então o  src/server.js  não atualiza em tempo real a alteração realizado,
+para resolver esse problema foi instalado uma dependencia com o nome de nodemom -D << o -D maiusculo é para dizer que a execução será em ambiente de desenvolvimento 
+
+o comando para instalar foi: yarn add nodemon -D
