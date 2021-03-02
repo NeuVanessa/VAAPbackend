@@ -13,3 +13,28 @@ Quando é realizado uma alteração o node não reconhece automaticamente então
 para resolver esse problema foi instalado uma dependencia com o nome de nodemom -D << o -D maiusculo é para dizer que a execução será em ambiente de desenvolvimento 
 
 o comando para instalar foi: yarn add nodemon -D
+
+
+Dentro do package.json foi adicionado o script que agora ele entenda que quem vai rodar por enquando
+o servidor é o nodemon 
+
+  "scripts": {
+"dev": "nodemon src/server.js"
+
+  }
+
+  depois é só digitar no cmd 
+
+  yarn dev
+
+  ou 
+
+  npm run dev
+
+
+
+
+
+  TESTE DAS REQUISICOES, FEITO COM Insomnia 
+
+  criação do servidor realizada através do mongo atlas

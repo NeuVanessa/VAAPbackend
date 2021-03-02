@@ -5,6 +5,10 @@
   "repository": "https://github.com/NeuVanessa/VAAPbackend.git",
   "author": "Vanessa Lopes <vanessashirlenee_estrela@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+"dev": "nodemon src/server.js"
+
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
