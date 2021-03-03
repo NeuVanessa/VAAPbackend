@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // aqui é informado o que o usário irá ter quais são os seus dados na tabela
-const UserSchema = new mongoose.Schema({
+const StudentSchema = new mongoose.Schema({
   name: String,
   registration: Number,
   numbercpf: String,
@@ -11,4 +11,4 @@ const UserSchema = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("Student", StudentSchema);

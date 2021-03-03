@@ -1,4 +1,5 @@
-const User = require("../models/User");
+const Student = require("../models/Student");
+
 
 //index, show,store,update,destroy
 
@@ -15,14 +16,14 @@ module.exports = {
 
     const { name,registration,numbercpf,course,semester,active } = req.body;
     //fazendo a verificação se usuário existe ou não
-    let user = await User.findOne({ registration:registration});
+    let student = await Student.findOne({ registration:registration});
 
-    if (!user) {
-      user = await User.create({ name,registration,numbercpf,course,semester,active});
+    if (!student) {
+      student = await Student.create({ name,registration,numbercpf,course,semester,active});
     }
 
     // const user = await User.create({name,registration,numbercpf,course,semester,active});
-    return res.json(user);
+    return res.json(student);
   },
 };
 
