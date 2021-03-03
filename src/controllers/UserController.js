@@ -8,7 +8,6 @@ const User = require("../models/User");
 //update alterar uma sessão
 //destroy deletar uma sessão.
 
-
 //POST DE REGISTRO DE NOVO USUÁRIO!
 module.exports = {
   async store(req, res) {
@@ -16,7 +15,7 @@ module.exports = {
 
     const { name,registration,numbercpf,course,semester,active } = req.body;
     //fazendo a verificação se usuário existe ou não
-    let user = await User.findOne({ name:name,registration:registration,numbercpf:numbercpf});
+    let user = await User.findOne({ registration:registration});
 
     if (!user) {
       user = await User.create({ name,registration,numbercpf,course,semester,active});
@@ -26,3 +25,6 @@ module.exports = {
     return res.json(user);
   },
 };
+
+
+
